@@ -82,7 +82,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html, body {margin: 0; height: 100%; overflow: hidden}
+html, body {margin: 0; height: 100%; }
 
 
 
@@ -97,14 +97,15 @@ body{
 
 .leftSide{
     width: 30%;
-    height: 80em;
+    height: 100%;
     overflow: hidden;
     background-image: url(./img/cyberpunk-jungle.jpg);
+
 }
 
 .logo{
     position: relative;
-    top: 20.12%;
+    top: 25%;
     text-align: center;
     background-color: #42424217;
     color: #FFFFFF;
