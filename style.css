@@ -85,26 +85,36 @@ table {
 html, body {margin: 0; height: 100%; overflow: hidden}
 
 
+
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Sarpanch", serif;
     display: flex;
-    height: 100%;
 }
 
 .leftSide{
     width: 30%;
     height: 80em;
     overflow: hidden;
-
+    background-image: url(./img/cyberpunk-jungle.jpg);
 }
 
-#backgroundimg{
-    object-fit: contain;
-    height: 100%;
+.logo{
+    position: relative;
+    top: 20.12%;
+    text-align: center;
+    background-color: #42424217;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 5em;
 }
+
 
 .rightSide {
-    width: 70%;
+    max-width: 70%;
 
 }
 
@@ -119,7 +129,7 @@ body{
 .flavourText{
     padding-left: 35px;
     padding-bottom: 5%;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .footer{
@@ -147,17 +157,46 @@ button{
 }
 
 .content{
-    height: 32%;
+    min-height: 32%;
     background-color: #ffffff;
-    
+    display: flex;
 }
 
 form{
     padding-bottom: 2%;
     padding-top: 2%;
     padding-left: 35px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #formTitle{
     font-size: x-large;
+    flex: 0 0 100%;
+}
+
+
+
+.formSec{
+ margin-bottom: 30px;
+ margin-right: 80px;
+ display: flex;
+ flex-direction: column;
+}
+
+input{
+    width: 300px;
+    height: 2em;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+label{
+    padding-bottom: 3px;
+}
+
+input:invalid{
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
 }

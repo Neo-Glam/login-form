@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="leftSide">
-        <img id="backgroundimg" src="./img/cyberpunk-jungle.jpg" alt="cyberpunk-jungle view" >
+        <div class="logo">GLAM</div>
     </div>
 
     <div class="rightSide">
@@ -24,15 +24,42 @@
         </div>
 
         <div class="content">
-            <form action="post">
+            <form action="index.html" id="myform" method="post">
                 <h1 id="formTitle">Let's do this!</h1>
+
+                <div class="formSec">
+                    <label for="name">Name</label>
+                        <input type="text" id="name" name="user-name" required>
+                    </div>
+                    <div class="formSec">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="Lastname" name="user-lastName" required>
+                        </div>
+                    <div class="formSec">
+                    <label for="email">Email</label>
+                        <input type="email" id="email" name="user-mail" required>
+                    </div>
+                    <div class="formSec">
+                    <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumbber" name="user-number" required>
+                    </div>
+                    <div class="formSec">
+                        <label for="passwrd">Password</label>
+                            <input type="password" id="passwrd" name="user-passwrd" required>
+                        </div>
+                    <div class="formSec">
+                    <label for="passwrd">Confirm Password</label>
+                        <input type="password" id="passwrd" name="user-passwrd" required>
+                    </div>
+
+                
             </form>
 
         </div>
 
         <div class="footer">
         <div class="box">
-            <button>Create Account</button>
+            <button type="submit" form="myform">Create Account</button>
             <p>Already an account? <a href="https://www.youtube.com/watch?v=aKlxTfExsDM">Log in !</a></p>
         </div>
         </div>
